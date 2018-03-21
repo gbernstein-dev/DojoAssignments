@@ -1,0 +1,82 @@
+body {
+  margin: 20px;
+  background-color: #4f3a4b;
+  width: 1000px;
+}
+
+.main_title_div {
+  width: 100%;
+  height: 50px;
+  background-color: #e8eef7;
+  border-radius: 10px;
+}
+
+#title {
+  float: left;
+  text-align: left;
+  margin-right: 500px;
+  font-size: 40px;
+  margin-left: 10px;
+}
+
+#other_title {
+  float: left;
+  text-align: right;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.section_title{
+  font-size: 20px;
+  color: white;
+}
+
+#about_me_section {
+  margin: 20px;
+  width: 100%;
+}
+
+#photo_of_me{
+  float: left;
+  margin-right: 100px;
+  border: solid;
+  padding: 1px;
+
+}
+
+img{
+  display: block;
+  float: left;
+}
+
+#about {
+  float: left;
+  width: 400px;
+  background-color: #ccc7cb;
+}
+
+#about_info {
+  background-color: white;
+  padding: 5px;
+}
+
+
+.main_content{
+  float: left;
+  width: 100%;
+}
+
+#la_mode, #family_contacts, #fiveEleven {
+  float: left;
+  width: 300px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #ccc7cb;
+}
+
+.content_info{
+  padding: 5px;
+  background-color: white;
+} 
+
+
