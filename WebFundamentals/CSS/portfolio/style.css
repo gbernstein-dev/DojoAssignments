@@ -14,9 +14,10 @@ body {
 #title {
   float: left;
   text-align: left;
-  margin-right: 500px;
+  margin-right: 450px;
   font-size: 40px;
   margin-left: 10px;
+  font-family: arial;
 }
 
 #other_title {
@@ -24,11 +25,15 @@ body {
   text-align: right;
   font-size: 20px;
   margin-top: 10px;
+  font-family: arial;
+  margin-right: 10px;
 }
 
 .section_title{
   font-size: 20px;
   color: white;
+  margin-left: 10px;
+  background-color: #a5adba;
 }
 
 #about_me_section {
@@ -52,12 +57,13 @@ img{
 #about {
   float: left;
   width: 400px;
-  background-color: #ccc7cb;
+  background-color: #a5adba;
 }
 
 #about_info {
   background-color: white;
   padding: 5px;
+  padding-bottom: 20px
 }
 
 
@@ -70,13 +76,31 @@ img{
   float: left;
   width: 300px;
   margin: 10px;
-  border-radius: 10px;
-  background-color: #ccc7cb;
+  
+  background-color: #a5adba;
 }
 
-.content_info{
-  padding: 5px;
+.content_info, .icons{
+  padding: 10px;
+  float: left;
   background-color: white;
-} 
+}
+
+button{
+  margin-left: 40px;
+  margin-top: 50px;
+  border: 1px solid black;
+  background-color: #5fd8b0;
+  font-size: 15px;
+  color: white;
+  border-radius: 15px;
+ }
+
+ .tech {
+  color: white;
+  font-size: 20px;
+  margin-left: 10px;
+  font-family: arial;
+ }
 
 
