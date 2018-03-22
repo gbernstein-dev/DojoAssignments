@@ -1,0 +1,53 @@
+html{
+	width: 970px;
+	background-color: #19527a;
+}
+
+#logo{
+	display:inline-block;
+	margin-right:150px;
+}
+
+#size_and_search{
+	width: 200px;
+	display:inline-block;
+	vertical-align: top;
+	text-align: right;
+
+}
+
+.size{
+	display: inline-block;
+}
+
+ul#navbar{
+	border: 2px solid;
+	background-color: #6498ea;
+}
+
+ul#navbar>li{
+	display:inline;
+	margin: 20px;
+	font-size: 25px;
+	color:white;
+}
+
+ul#navbar>li>a{
+	text-decoration: none;
+	color:white;
+}
+
+ul#sidebar{
+	display:inline-block;
+	vertical-align: top;
+}
+
+#main_text{
+	display: inline-block;
+	width:700px;
+	text-align: center;
+	margin-left: 50px;
+}
+
+
+
