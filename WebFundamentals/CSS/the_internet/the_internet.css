@@ -29,7 +29,7 @@ h1{
 
 h2 {
   margin-top:50px;
-  border: 2px solid black;
+  border: 1px solid black;
   padding: 20px;
   background-color: #2c59a0;
   color: white;
@@ -38,6 +38,11 @@ h2 {
 #sidebar{
   display: inline-block;
   width: 200px;
+}
+
+#sidebar_a{
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
 }
 
 #sidebar_a>button{
@@ -85,11 +90,16 @@ img#ninja{
   z-index: 2;
 }
 
-#top_main{
+main{
+  display: inline-block;
+}
+
+#center{
   display:inline-block;
   vertical-align: top;
-  border-bottom: 2px solid black;
-
+  width: 700px;
+  border-bottom: 1px solid black;
+  margin-left: 20px;
 }
 
 #toolbar_images{
@@ -97,37 +107,60 @@ img#ninja{
   vertical-align: top;
   
 }
- img#dns{
+img#dns{
   height: 20px;
   width: 20px;
   vertical-align: top;
 }
 
- img#phone{
+img#phone{
   height: 40px;
   width: 40px;
-  margin-top: 10px;
+  margin-top: -5px;
 }
 
 #toolbar_images>a{
   text-decoration: none;
-  margin-right: 350px;
   vertical-align: top;
+  margin-right: 400px;
 }
 
 #hours{
   display: inline-block;
   vertical-align: top;
   margin-top: -25px;
-}
+  font-size: 12px;
+  text-align: center;
 
-#hours>p{
-  vertical-align: top;
 }
 
 #phone{
-  font-size: 40px;
+  font-size: 30px;
   margin-top: -10px;
   margin-bottom: -10px;
-  color: #38bed8;
+  color: #37aedd;
+  text-align: right;
 }
+
+div#mid_main{
+  
+  display: inline-block;
+  vertical-align: top;
+  border-top: 1px solid black;
+}
+
+#mid_main>p{
+  display:inline-block;
+  vertical-align: top;
+}
+
+#mid_main>img{
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+}
+
+#mid_main>ul{
+  display: inline-block;
+}
+
