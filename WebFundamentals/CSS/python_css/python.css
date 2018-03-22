@@ -1,19 +1,43 @@
 html{
 	width: 970px;
 	background-color: #19527a;
+	font-family: arial;
 }
 
 #logo{
 	display:inline-block;
-	margin-right:150px;
+	margin-right: 60px;
 }
 
+div#searchbar{
+	display:inline-block;	
+}
+
+h4{
+	color: white;
+}
+
+div#searchbar>input{
+	display: inline-block;
+	height:30px;
+	width:180px;
+	text-align: center;
+}
+
+div#searchbar>button{
+	display:inline-block;
+	vertical-align: top;
+	text-align: center;
+	height: 30px;
+	width: 40px;
+}
+
+
 #size_and_search{
-	width: 200px;
+	width: 300px;
 	display:inline-block;
 	vertical-align: top;
 	text-align: right;
-
 }
 
 .size{
@@ -23,6 +47,9 @@ html{
 ul#navbar{
 	border: 2px solid;
 	background-color: #6498ea;
+	padding: 15px;
+	border-radius: 10px;
+	text-align: center;
 }
 
 ul#navbar>li{
@@ -42,12 +69,86 @@ ul#sidebar{
 	vertical-align: top;
 }
 
+ul#sidebar>li{
+	list-style-type: "\00BB";
+	color: yellow;
+	margin: 5px;
+	text-align: center;
+}
+
+ul#sidebar>li>a{
+	color: white;
+	font-size: 20px;
+}
+
 #main_text{
 	display: inline-block;
-	width:700px;
+	width:600px;
 	text-align: center;
 	margin-left: 50px;
 }
+
+#lorem_quote{
+	color: white;
+}
+
+#ipsem_list{
+	color: gold;
+	font-size: 20px;
+	font-style: italic;
+}
+
+#zen{
+	color: white;
+}
+
+#middle_content{
+	display: inline-block;
+	margin-left: 20px;
+	text-align: left;
+	background-color: white;
+	padding-right:120px;
+
+
+}
+
+.description{
+	display: inline-block;
+	width: 370px;
+	vertical-align: top;
+	border-top: 5px solid #6498ea;
+	margin: 15px;
+	font-size: 15px;
+}
+
+h3.middle{
+	text-align: center;
+	vertical-align: top;
+}
+
+.explain{
+	width: 400px;
+	text-align: center;
+	vertical-align: top;
+}
+
+div#footer{
+	margin-left: 30px;
+	text-align: center;
+	padding-top: 40px;
+	color: white;
+	font-size: 15px;
+}
+div#footer>h3{
+	display:inline;
+	margin: 15px;
+}
+
+p#copyright{
+	font-size: 10px;
+}
+
+
 
 
 
