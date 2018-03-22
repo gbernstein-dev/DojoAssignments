@@ -1,7 +1,8 @@
 html{
 	width: 970px;
 	background-color: #19527a;
-	font-family: arial;
+	font-family: helvetica;
+
 }
 
 #logo{
@@ -10,7 +11,11 @@ html{
 }
 
 div#searchbar{
-	display:inline-block;	
+	display:inline-block;
+	background-color: #3b3d42;
+	padding: 15px;
+	border-radius: 10px;
+	border: 2px solid;	
 }
 
 h4{
@@ -27,9 +32,10 @@ div#searchbar>input{
 div#searchbar>button{
 	display:inline-block;
 	vertical-align: top;
-	text-align: center;
 	height: 30px;
 	width: 40px;
+	background-color: #19527a;
+	border-color: grey; 
 }
 
 
@@ -104,11 +110,10 @@ ul#sidebar>li>a{
 
 #middle_content{
 	display: inline-block;
-	margin-left: 20px;
 	text-align: left;
 	background-color: white;
 	padding-right:120px;
-
+	width: 100%;
 
 }
 
@@ -119,6 +124,7 @@ ul#sidebar>li>a{
 	border-top: 5px solid #6498ea;
 	margin: 15px;
 	font-size: 15px;
+	font-weight: 100;
 }
 
 h3.middle{
