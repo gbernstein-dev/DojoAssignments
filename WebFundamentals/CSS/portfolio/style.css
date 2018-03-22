@@ -63,7 +63,7 @@ h2 {
   width: 100%;
 }
 
-#la_mode, #family_contacts, #fiveEleven {
+.mid_section {
   display:inline-block;
   width: 300px;
   margin: 10px;
@@ -81,7 +81,7 @@ h2 {
   background-color: white;
 }
 
-.icon{
+div.bot_section>img{
   height: 40px;
   width: 40px;
 }
@@ -110,7 +110,7 @@ button{
   font-size: 16px;
   font-family: arial;
  }
-.tiny_icon{
+div#contact_info>img{
   height:20px;
   width: 20px;
   border-radius:5px;
