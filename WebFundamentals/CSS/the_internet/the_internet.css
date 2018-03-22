@@ -1,25 +1,23 @@
 html{
   font-family: helvetica;
   width: 970px;
+  margin-left: 10px;
 }
 
-div#top_header{
+#top_header{
   height: 50px;
   margin-bottom: 70px;
 }
 
-div#top_header>img{
-  position: absolute;
-  top: 50px;
+#top_header>img{
+  margin-top: 40px;
   width: 100px;
   height: 100px;
-
 }
 
 h1{
-  position: absolute;
-  left: 120px;
-  top: 60px;
+  margin-top: -68px;
+  margin-left: 100px;
   font-size: 40px;  
 }
 
@@ -27,7 +25,11 @@ h1{
   color: #2c59a0;
 }
 
-h2 {
+#red_letters{
+  color: #cc3c35;
+}
+
+h2{
   margin-top:50px;
   border: 1px solid black;
   padding: 20px;
@@ -37,57 +39,71 @@ h2 {
 
 #sidebar{
   display: inline-block;
-  width: 200px;
+  width: 175px;
+
 }
 
 #sidebar_a{
   border-bottom: 1px solid black;
   padding-bottom: 20px;
+  font-weight: bold;
+}
+
+#computers{
+  font-size: 15px;
 }
 
 #sidebar_a>button{
   width: 100%;
+  padding: 5px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: white;
+}
+
+#video{
+  background-color: #2c59a0;
+}
+#resources{
+  background-color: #f4aa42;
+
 }
 
 #sidebar_b{
   margin-top: 20px;
-  width: 300px;
-  
+  background-image: url("images/ad_background.png");
+  padding-bottom: 30px;
 }
 
 #sidebar_b>p{
-  position: absolute;
+  display: block;
   text-align: center;
-  width: 15%;
-  top: 450px;
-  left: 30px;
   z-index: 2;
   color: white;
-  font-size: 20px;
-}
-img#blue{
-  width: 200px;
-  height: 400px;
+  font-size: 25px;
 }
 
+
 img#ninja{
+  display: block;
   width: 90px;
   height: 120px;
-  position: absolute;
-  text-align: center;
-  top: 550px;
-  left: 55px;
+  margin-top: -30px;
+  margin-left: 40px;
   z-index: 2;
 }
 
 #sidebar_b>button{
   width: 140px;
   height: 30px;
-  position: absolute;
-  text-align: center;
-  top: 700px;
-  left: 35px;
+  margin-left:20px;
+  margin-top:10px;
   z-index: 2;
+  border-radius: 10px;
+  background-color: #37aedd;
+  color: white;
+  font-weight: bold;
+  
 }
 
 main{
@@ -116,7 +132,7 @@ img#dns{
 img#phone{
   height: 40px;
   width: 40px;
-  margin-top: -5px;
+  margin-top: 5px;
 }
 
 #toolbar_images>a{
@@ -142,7 +158,7 @@ img#phone{
   text-align: right;
 }
 
-div#mid_main{
+#mid_main{
   
   display: inline-block;
   vertical-align: top;
@@ -157,7 +173,9 @@ div#mid_main{
 #mid_main>img{
   display: inline-block;
   height: 100px;
-  width: 100px;
+  width: 275px;
+  margin-left:210px;
+
 }
 
 #mid_main>ul{
