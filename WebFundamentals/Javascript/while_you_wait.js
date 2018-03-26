@@ -13,3 +13,4 @@ for (var i = daysUntilMyBirthday; i >= 0; i--){
 		console.log("IT'S MY BIRTHDAY");
 	}
 }
+
