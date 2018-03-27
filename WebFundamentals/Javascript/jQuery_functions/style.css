@@ -1,0 +1,8 @@
+main{
+  margin-left: 200px;
+}
+.box {
+  width: 200px;
+  vertical-align: top;
+  display: inline-block;
+}
