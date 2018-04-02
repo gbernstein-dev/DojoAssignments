@@ -1,0 +1,11 @@
+html{
+	margin-left: 50px;
+}
+table, thead{
+	border: 1px solid;
+}
+
+th, td{
+	padding-left: 20px;
+	padding-right: 20px;
+}
