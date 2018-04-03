@@ -1,6 +1,6 @@
 def grades():
 	import random
-	for student in range(11):
+	for student in range(10):
 		grade = ""
 		score = random.randint(60,100)
 		if score > 90:
