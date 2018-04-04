@@ -1,16 +1,12 @@
 
-def name_output(dict):
+def name_output(a):
 	str_len = 0
-	student_num = 1
-	instuctor_num = 1
-	for student in dict['Students']:
-		str_len = len(student['first_name'])+len(student['last_name'])
-		print '{} - {} {} - {}'.format(student_num,student['first_name'],student['last_name'],str_len)
-		student_num += 1
-	for instuctor in dict['Instructors']:
-		str_len = len(instuctor['first_name'])+len(instuctor['last_name'])
-		print '{} - {} {} - {}'.format(instuctor_num,instuctor['first_name'],instuctor['last_name'],str_len)
-		instuctor_num += 1
+	class_count = 1
+	for job,people in a.items():
+		print job
+		for names in range(len(people)):
+			str_len = len(people[names]["first_name"])+len(people[names]["last_name"])
+			print "{} - {} {} - {}".format(names+1,people[names]["first_name"],people[names]["last_name"],str_len)
 		
 users = {
  'Students': [
@@ -24,6 +20,5 @@ users = {
      {'first_name' : 'Martin', 'last_name' : 'Puryear'}
   ]
  }
-testcase = name_output(users)
-print testcase
 
+name_output(users)
