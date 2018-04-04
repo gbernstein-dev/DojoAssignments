@@ -14,8 +14,6 @@ def multiplied(arr,num):
 		new_item = item * num
 		new_arr.append(new_item)
 	return new_arr
-testcase = multiplied([2,4,6,8,10],3)
-print testcase
 
 #utilize multiplied() to create an array containing smaller arrays
 #with quantity of 1's equal to the integer at that index
@@ -26,7 +24,7 @@ def layered_multiples(arr):
 		for i in range(item):
 			item_arr.append(1)
 		layered_arr.append(item_arr)
-  	return layered_arr
-testcase2 = layered_multiples(multiplied([2,4,5],3))
-print testcase2
+  	print layered_arr
+layered_multiples(multiplied([2,4,5],3))
+
 
