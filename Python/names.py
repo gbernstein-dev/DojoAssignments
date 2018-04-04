@@ -1,7 +1,5 @@
 
 def name_output(a):
-	str_len = 0
-	class_count = 1
 	for job,people in a.items():
 		print job
 		for names in range(len(people)):
