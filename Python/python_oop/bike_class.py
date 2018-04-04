@@ -5,7 +5,7 @@ class Bike(object):
 		self.miles = 0
 
 	def display_info(self):
-		print "The price is {}. This car has a max speed of {} mph. Currently has: {} miles.".format(self.price,self.max_speed,self.miles)
+		print "The price is {}. This bike has a max speed of {} mph. Currently has: {} miles.".format(self.price,self.max_speed,self.miles)
 
 	def ride(self):
 		self.miles += 10
