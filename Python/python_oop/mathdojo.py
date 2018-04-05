@@ -10,7 +10,7 @@ class MathDojo(object):
 					ls_total += j
 				self.total += ls_total
 			else:
-				self.total = self.total + i
+				self.total += i
 		return self
 
 	def subtract(self, *items):
@@ -18,9 +18,9 @@ class MathDojo(object):
 		for i in items:
 			if type(i) is list:
 				for j in i:
-					ls_total = ls_total + j
+					ls_total += j
 			else:
-				ls_total = ls_total + i
+				ls_total += i
 		self.total -= ls_total
 		return self
 
