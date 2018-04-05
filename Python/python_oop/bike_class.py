@@ -24,3 +24,9 @@ class Bike(object):
 
 bike1 = Bike("$1000",100,30000)
 bike1.display_info().ride().reverse().reverse()
+bike1.ride()
+print bike1.miles
+bike1.reverse()
+print bike1.miles
+bike1.reverse()
+print bike1.miles

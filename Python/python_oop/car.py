@@ -1,5 +1,5 @@
 class Car(object):
-	def __init__(self,price,speed,fuel,mileage):
+	def __init__(self,price,speed,fuel,mileage,tax=0.12):
 		self.price = price
 		self.speed = speed
 		self.fuel = fuel
@@ -7,11 +7,9 @@ class Car(object):
 
 		if price >= 10000:
 			self.tax = 0.15
-		else:
-			self.tax = 0.12
 
 	def display_all(self):
-		print "The price is {}. This car has a max speed of {} mph. Has a {} fuel tank. Tax is {}.".format(self.price,self.fuel,self.mileage,self.tax)
+		print "The price is {}. This car has a max speed of {} mph. Has a {} fuel tank. Tax is {}.".format(self.price,self.mileage,self.fuel,self.tax)
 		return self 
 
 
