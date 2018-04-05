@@ -10,18 +10,18 @@ class MathDojo(object):
 					ls_total += j
 				self.total += ls_total
 			else:
-				self.total += i
+				self.total = self.total + i
 		return self
 
 	def subtract(self, *items):
-		ls_total = 0
+		mini_total = 0
 		for i in items:
 			if type(i) is list:
 				for j in i:
-					ls_total += j
+					mini_total = mini_total + j
 			else:
-				ls_total += i
-		self.total -= ls_total
+				mini_total = mini_total + i
+		self.total -= mini_total
 		return self
 
 	def result(self):
