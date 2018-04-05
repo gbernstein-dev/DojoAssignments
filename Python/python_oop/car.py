@@ -12,6 +12,7 @@ class Car(object):
 
 	def display_all(self):
 		print "The price is {}. This car has a max speed of {} mph. Has a {} fuel tank. Tax is {}.".format(self.price,self.fuel,self.mileage,self.tax)
+		return self 
 
 
 car1 = Car(12000,"40mph","Full","15mpg")
