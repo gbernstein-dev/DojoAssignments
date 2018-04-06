@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  <title>Index Form</title>
+</head>
+<body>
+  <main>
+    <form action='/result' method='post'>
+        First Name: <input type='text' name='first_name'>
+        <p> Dojo Location: <p>
+        <select name='dojo_location'>
+          <option value='Chicago'> Chicago </option>
+          <option value='San Jose'> San Jose </option>
+        </select>
+        <p> Favorite Language: <p>
+        <select name='favorite_language'>
+          <option value='Python'> Python </option>
+          <option value='JavaScript'> JavaScript </option>
+          <option value='CSS'> CSS </option>
+        </select>
+        <p> Comment(optional): <p>
+        <textarea name='comment_section'> 
+        </textarea>
+
+        <input type='submit' value='Submit'>
+
+    </form>
+  </main>
+</body>
+</html>
