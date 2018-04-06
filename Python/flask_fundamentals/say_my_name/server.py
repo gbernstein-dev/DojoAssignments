@@ -6,13 +6,13 @@ app=Flask(__name__)
 def index():
 	return render_template("index.html")
 
-
-@app.route('/process', methods=['GET','POST'])
+@app.route('/process', methods=['POST'])
 def process():
-	print "Got data!"
 
-	name = request.form['name']
-	# redirects back to the '/' route
-	return redirect('/')
+  name = request.form['name']
 
-app.run(debug=False) # run our server
+  print name
+	
+  return redirect('/')
+
+app.run(debug=True)
