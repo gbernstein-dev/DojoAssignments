@@ -9,7 +9,10 @@ def index():
 
 @app.route('/', methods=['POST'])
 def increase():
-	session['total'] += 2
+	if request.form['action'] == 'increase':
+		session['total'] += 2
+	elif request.form['action'] == 'reset':
+		session['total'] = 1
 	return render_template('index.html')
 
 app.run(debug=True)
