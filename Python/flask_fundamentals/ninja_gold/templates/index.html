@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gold Game</title>
+</head>
+<body>
+  {% if last_total %}
+    <p> Previous total: {{ last_total }} <p>
+  {% endif %}
+  <p> {{ response }} </p>
+  <p> Your Gold: {{ total }} </p>
+  
+  <form action="/" method="post">
+    <input type="hidden" name="building" value="farm" />
+    <input type="submit" value="Win/Lose 10"/>
+  </form>
+  <form action="/" method="post">
+    <input type="hidden" name="building" value="apartment" />
+    <input type="submit" value="Win/Lose 50"/>
+  </form>
+  <form action="/" method="post">
+    <input type="hidden" name="building" value="mansion" />
+    <input type="submit" value="Win/Lose 100"/>
+  </form>
+ 
+</body>
+</html>
