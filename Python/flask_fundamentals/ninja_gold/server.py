@@ -13,23 +13,21 @@ def index():
 @app.route('/', methods=['POST'])
 
 def process_money():
-  farm_range = random.randrange(-10,11)
-  apartment_range = random.randrange(-50,51)
-  mansion_range = random.randrange(-100,101)
+  low_range = random.randrange(-10,11)
+  mid_range = random.randrange(-50,51)
+  high_range = random.randrange(-100,101)
 
   last_total = session['total']
 
-  if request.form['building'] == 'farm':
-    session['total'] += farm_range
-    session['response'] = "Gold increment: "+str(farm_range)
-  elif request.form['building'] == 'apartment':
-    session['total'] += apartment_range
-    session['total'] += apartment_range
-    session['response'] = "Gold increment: "+str(apartment_range)
-  elif request.form['building'] == 'mansion':
-    session['total'] += mansion_range
-    session['total'] += mansion_range
-    session['response'] = "Gold increment: "+str(mansion_range)
+  if request.form['bet'] == 'low':
+    session['total'] += low_range
+    session['response'] = "Gold increment: "+str(low_range)
+  elif request.form['bet'] == 'mid':
+    session['total'] += mid_range
+    session['response'] = "Gold increment: "+str(mid_range)
+  elif request.form['bet'] == 'high':
+    session['total'] += high_range
+    session['response'] = "Gold increment: "+str(high_range)
   if session['total'] < 0:
     session['total'] = 0
     session['response'] = "You went negative!"
