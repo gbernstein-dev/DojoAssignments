@@ -5,7 +5,15 @@
   <title>Index Form</title>
 </head>
 <body>
+
   <main>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        {% for message in messages %}
+          <p>{{message}}</p>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
     <form action='/result' method='post'>
         First Name: <input type='text' name='first_name'>
         <p> Dojo Location: <p>
@@ -26,6 +34,7 @@
         <input type='submit' value='Submit'>
 
     </form>
+
   </main>
 </body>
 </html>
