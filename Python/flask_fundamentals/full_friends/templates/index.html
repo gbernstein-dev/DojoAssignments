@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Friends List</title>
+</head>
+<body>
+  <h1> All Friends </h1>
+
+  <table id='friend_index'>
+    <tr>
+      <th> First Name </th>
+      <th> Last Name </th>
+      <th> Friend Since </th>
+    </tr>
+    {% for friend in all_friends: %}
+    <tr>     
+        <td> {{ friend.first_name }} </td>
+        <td> {{ friend.last_name }} </td>
+        <td> {{ friend.friend_since['month'] }}/{{ friend.friend_since['day'] }}/{{ friend.friend_since['year'] }} </td>  
+    </tr>
+    {% endfor %}
+  </table>
+
+  <form id='create_friend' action='/' method='post'>
+    First Name: <input type='text' name='first_name'>
+    Last Name: <input type='text' name='last_name'>
+    <input type='submit' value='Create Friend!'>
+  </form> 
+
+</body>
+</html>

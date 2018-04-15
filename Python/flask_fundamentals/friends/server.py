@@ -13,6 +13,17 @@ def create():
     # add a friend to the database!
     return redirect('/')
 
-
+#UPDATE
+@app.route('/update_friend/<id>', methods=['POST'])
+def update(friend_id):
+    query = "UPDATE friends SET first_name = :first_name, last_name = :last_name, occupation = :occupation WHERE id = :id"
+    data = {
+             'first_name': request.form['first_name'],
+             'last_name':  request.form['last_name'],
+             'occupation': request.form['occupation'],
+             'id': friend_id
+           }
+    mysql.query_db(query, data)
+    return redirect('/')
 app.run(debug=True)
 
