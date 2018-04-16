@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Results</title>
+</head>
+<body>
+  <div>
+    <h1> Submitted info: </h1>
+    <p> First Name: {{ request.session.name }} </p>
+    <p> Dojo Location: {{ request.session.location }} </p>
+    <p> Favorite Language: {{ request.session.language }} </p>
+    <p> Comments: {{ request.session.comments }} </p>
+  </div>
+</body>
+</html>
