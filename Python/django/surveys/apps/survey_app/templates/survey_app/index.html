@@ -4,7 +4,7 @@
 	<title>Survey Form</title>
 </head>
 <body>
-    <form action='/result' method='post'>
+    <form action='/survey/process' method='post'>
     	{% csrf_token %}
         First Name: <input type='text' name='first_name'>
         <p> Dojo Location: <p>
