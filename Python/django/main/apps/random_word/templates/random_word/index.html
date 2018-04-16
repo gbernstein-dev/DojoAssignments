@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>	Random Word Generator </title>
+</head>
+<body>
+	<p> Random Output: {{request.session.word}} </p>
+	<p> Attempt: {{request.session.attempt}} </p>
+	<form action = '/random_word', method = 'post'>
+		{% csrf_token %}
+		<input type = 'hidden', name='fun', value = 'gen_word'>
+		<button type = 'submit', value = 'gen_word'> Generate a random word! </button> 
+	</form>
+	<form action = '/random_word/reset', method = 'post'>
+		{% csrf_token %}
+		<button type = 'submit', value = 'reset'> Reset counter </button>
+	</form>
+</body>
+</html>

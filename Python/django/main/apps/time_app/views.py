@@ -6,4 +6,4 @@ def index(request):
 	'day': strftime("%b %d, %Y", gmtime()),
 	'time': strftime("%H:%M %p", gmtime())
 	}
-	return render(request, 'index.html', context)
+	return render(request, 'time_app/index.html', context)
