@@ -33,4 +33,32 @@ eeyore.south = kanga;
 eeyore.east = heffalumps;
 heffalumps.west = eeyore;
 
-console.log(heffalumps.west.south.south.south)
+function move(direction) {
+  if (direction !== undefined) {
+
+    if (direction == "north"){
+      player.location = player.location.north;
+      console.log(`Player moved ${direction} and is now at ${player.location.character}`);
+    }
+    else if (direction == "east"){
+      player.location = player.location.east;
+      console.log(`Player moved ${direction} and is now at ${player.location.character}`);
+    }
+    else if (direction == "west"){
+      player.location = player.location.west;
+      console.log(`Player moved ${direction} and is now at ${player.location.character}`);
+    }
+    else if (direction == "south"){
+      player.location = player.location.south;
+      console.log(`Player moved ${direction} and is now at ${player.location.character}`); 
+    }
+    
+    else{
+      console.log("please enter valid input")
+    }
+  }
+}
+move("north");
+move("east");
+move("tacos");
+
